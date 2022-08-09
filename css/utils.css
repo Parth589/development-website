@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    /* outline: 2px solid lime; */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    color: inherit;
+    font: inherit;
+    font-family: Roboto, sans-serif;
+}
+
+.remove-scroll {
+    overflow-y: scroll;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+}
+
+.remove-scroll::-webkit-scrollbar {
+    /* WebKit */
+    width: 0;
+    height: 0;
+}
+
+/* icon sizes */
+.icon-sm {
+    width: 15px;
+}
+
+.icon-sm-2 {
+    width: 28px;
+}
+
+.icon-md {
+    width: 39px;
+}
+
+.icon-md-2 {
+    width: 45px;
+}
+
+.icon-lg {
+    width: 65px;
+}
+
+.icon-lg-2 {
+    width: 100px;
+}
+
+/* text-case styles */
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.caps {
+    text-transform: capitalize;
+}
+
+/* text-sizes */
+.text-sm {
+    font-size: .8rem;
+}
+
+.text-md {
+    font-size: 1.2rem;
+}
+
+.text-md-2 {
+    font-size: 1.6rem;
+}
+
+.text-lg {
+    font-size: 2.1rem;
+}
+
+.text-lg-2 {
+    font-size: 4rem;
+}
+
+.text-x-lg {
+    font-size: 5.5rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.secondary-text {
+    width: 600px;
+    min-width: 30vw;
+    max-width: 90vw;
+    text-align: center;
+    color: gray;
+    font-family: Roboto, sans-serif;
+}

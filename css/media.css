@@ -1,0 +1,30 @@
+:root {
+    --navigation-height: 100vh;
+}
+
+@media screen and (max-width:700px) {
+    nav {
+        justify-content: space-between;
+    }
+
+    #hamburger-menu-trigger {
+        display: unset;
+        cursor: pointer;
+    }
+
+    #hamburger-menu-list {
+        position: absolute;
+        height: 0;
+        opacity: 0;
+        background-color: var(--clr-nav-background-solid);
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 100%;
+    }
+}

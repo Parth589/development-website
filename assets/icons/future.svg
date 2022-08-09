@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 16</title>
+    <defs>
+        <linearGradient x1="5.05050505%" y1="3.53535354%" x2="115.656566%" y2="124.747475%" id="linearGradient-1">
+            <stop stop-color="#595959" offset="0%"></stop>
+            <stop stop-color="#595959" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="15.4769231%" y1="-12.9347623%" x2="26.5648352%" y2="77.4426065%" id="linearGradient-2">
+            <stop stop-color="#FF9DC4" offset="5.8752%"></stop>
+            <stop stop-color="#FE77D8" offset="63.5417%"></stop>
+            <stop stop-color="#9B99FF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-20.7788462%" y1="49.278342%" x2="104.973077%" y2="50.7526503%" id="linearGradient-3">
+            <stop stop-color="#FFA4C8" offset="14.8242%"></stop>
+            <stop stop-color="#D45AFF" offset="45.1423%"></stop>
+            <stop stop-color="#819CFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="13.6336996%" y1="6.91819292%" x2="79.3626374%" y2="119.045177%" id="linearGradient-4">
+            <stop stop-color="#FF2B7F" offset="0%"></stop>
+            <stop stop-color="#5746C8" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-6.67584481%" y1="9.59449312%" x2="61.1188986%" y2="85.5244055%" id="linearGradient-5">
+            <stop stop-color="#FC97D4" offset="0%"></stop>
+            <stop stop-color="#F0DDFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-16">
+            <rect id="Rectangle" fill="#141414" fill-rule="nonzero" x="0" y="0" width="100" height="100" rx="18"></rect>
+            <rect id="Rectangle" stroke="url(#linearGradient-1)" x="0.5" y="0.5" width="99" height="99" rx="17.5"></rect>
+            <rect id="Rectangle" stroke="url(#linearGradient-2)" x="27.25" y="30.5" width="45.5" height="37.9167" rx="3"></rect>
+            <path d="M74.104,69.5 L25.896,69.5 C24.849,69.5 24,68.651 24,67.604 C24,66.557 24.849,65.708 25.896,65.708 L74.104,65.708 C75.151,65.708 76,66.557 76,67.604 C76,68.651 75.151,69.5 74.104,69.5 Z" id="Path" stroke="url(#linearGradient-3)" fill="#141414" fill-rule="nonzero" stroke-linecap="round"></path>
+            <g id="Group" transform="translate(39.708500, 38.083500)">
+                <circle id="Oval" fill="url(#linearGradient-4)" fill-rule="nonzero" cx="10.2375" cy="10.2375" r="10.2375"></circle>
+                <circle id="Oval" stroke="url(#linearGradient-5)" stroke-width="0.5" cx="10.2375" cy="10.2375" r="9.9875"></circle>
+            </g>
+            <path d="M46.533,47.7 C47.306,48.423 48.658,49.687 49.288,50.277 C49.481,50.456 49.779,50.456 49.971,50.276 L54.496,46.046" id="Path" stroke="#FFE1ED" stroke-linecap="round"></path>
+        </g>
+    </g>
+</svg>
