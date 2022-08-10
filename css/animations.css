@@ -22,3 +22,107 @@
         opacity: 1;
     }
 }
+
+@keyframes trxRz {
+    0% {
+        transform: rotateZ(0deg) translateX(0);
+    }
+
+    70% {
+        transform: rotateZ(0deg) translateX(0px);
+    }
+
+    100% {
+        transform: rotateZ(9deg) translateX(0);
+    }
+}
+
+@keyframes grow {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes skew45-2rem {
+    from {
+        transform: translateX(-2rem) skewX(0deg);
+    }
+
+    to {
+        transform: translateX(0rem) skewX(45deg);
+    }
+}
+
+@keyframes skew45-0rem {
+    from {
+        /* --skew-deg: 0deg; */
+        transform: translateX(0rem) skewX(0deg);
+    }
+
+    to {
+        /* --skew-deg: 45deg; */
+        transform: translateX(0rem) skewX(45deg);
+    }
+}
+
+@keyframes skew-45-2rem {
+    from {
+        /* --skew-deg: 0deg; */
+        transform: translateX(-2rem) skewX(0deg);
+    }
+
+    to {
+        /* --skew-deg: -45deg; */
+        transform: translateX(0rem) skewX(-45deg);
+    }
+}
+
+@keyframes skew-45-0rem {
+    from {
+        /* --skew-deg: 0deg; */
+        transform: translateX(0rem) skewX(0deg);
+    }
+
+    to {
+        /* --skew-deg: -45deg; */
+        transform: translateX(0rem) skewX(-45deg);
+    }
+}
+
+@keyframes fade-up-btm {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes go-down {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(100%);
+
+    }
+}
+
+@keyframes go-up {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-100%);
+
+    }
+}

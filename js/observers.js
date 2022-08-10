@@ -1,28 +1,52 @@
-let section = document.querySelector(".develop-animation");
-console.log(section);
+let section = document.querySelector(".section3");
+let section_animation = document.querySelector(".develop-animation");
 const callback = (entries, observer) => {
-    console.log(entries);
     entries.forEach((entry) => {
-        console.log(entry.target);
-        console.log("change is received");
         if (entry.isIntersecting) {
-            entry.target.setAttribute('animate', "");
-            console.log("element entered");
+            //in the viewport
+            section_animation.setAttribute('animate', "");
+            document.querySelector(".develop-animation>span").style.animation = 'fade-up-btm 1s .5s 1 forwards';
         }
         else {
-            entry.target.removeAttribute("animate");
-            observer.unobserve(section);
-            console.log("Element is removed");
+            //outside the viewport
+            section_animation.removeAttribute("animate");
+            document.querySelector(".develop-animation>span").style.animation = 'none';
+
         }
     });
 };
 
 let options = {
-    root: document.querySelector('body'),
+    root: null,
     rootMargin: '0px',
-    threshold: 1.0
+    threshold: 0.45
 };
-
 let observer = new IntersectionObserver(callback, options);
 
 observer.observe(section);
+
+const switch_section = document.querySelector('.switch-up-down');
+let observer2 = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry.target);
+        if (entry.isIntersecting) {
+            //coming inside
+            switch_section.setAttribute('animate', "");
+            Array.from(switch_section.children).forEach((e) => {
+                e.toggleAttribute('second');
+            });
+        }
+        else {
+            //going outside
+            switch_section.removeAttribute('animate');
+            Array.from(switch_section.children).forEach((e) => {
+                e.toggleAttribute('second');
+            });
+        }
+    });
+}, {
+    root: null,
+    rootMargin: '0px',
+    threshold: 1
+});
+observer2.observe(switch_section);
