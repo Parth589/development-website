@@ -97,7 +97,7 @@ header {
 .develop-animation>div {
     display: flex;
     max-width: 60vw;
-    min-width: 500px;
+    min-width: min(500px, 90vw);
     justify-content: center;
     gap: 2rem;
     align-items: center;
@@ -400,6 +400,7 @@ header {
 
 .section6>img {
     max-width: 90vw;
+    width: 1000px;
 }
 
 .section7 {
@@ -435,7 +436,7 @@ header {
 .section8 {
     min-height: 100vh;
     gap: 3rem;
-    padding: 5rem;
+    padding: min(15%, 5vw);
     background-color: #000;
     color: #fff;
 }
@@ -443,6 +444,8 @@ header {
 .section8 .description {
     padding: 0% min(15%, 5vw);
     gap: 2rem;
+    max-width: 1000px;
+    align-items: flex-start;
 }
 
 /* .section8 .description> * {
@@ -465,4 +468,117 @@ header {
     background-position: center;
     color: #fff;
     padding: min(15%, 5vw);
+}
+
+.section10 {
+    min-height: 100vh;
+    display: grid;
+    background-color: #000;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* flex-wrap: wrap; */
+    width: 100%;
+    padding: 2rem;
+    gap: 2rem;
+    grid-template-areas:
+        'head head head'
+        'b1 b2 b3'
+        'b4 b5 b6';
+}
+
+.section10>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+}
+
+.section10>h3 {
+    grid-area: head;
+}
+
+.section10 .secondary-text {
+    max-width: 70vw;
+}
+
+.section11 {
+    min-height: 100vh;
+    background-color: #1D1E20;
+    color: #fff;
+    padding: min(15%, 5vw);
+    gap: 2rem;
+    justify-content: start;
+}
+
+.section11>ul {
+    gap: 1rem;
+}
+
+.section11>ul>hr {
+    width: 100%;
+    color: grey;
+}
+
+.section11>ul>li {
+    gap: .7rem;
+    min-width: 100%;
+    width: 90vw;
+    max-width: 90vw;
+}
+
+.section11>ul>li summary {
+    /* display: none; */
+    height: 0;
+    opacity: 0;
+    max-height: fit-content;
+}
+
+.section11>ul>li[show-content] summary {
+    /* display: unset; */
+    animation: grow-height 1s 1 forwards;
+}
+
+.section11>ul>li>div {
+    justify-content: space-between;
+    padding-right: 1em;
+    width: 100%;
+}
+
+.ftr-hr {
+    width: 90vw;
+    color: gray;
+}
+
+footer {
+    background-color: #1D1E20;
+    color: white;
+    padding: 2rem min(15%, 5vw);
+}
+
+footer>ul {
+    width: 100%;
+    justify-content: start !important;
+    gap: 3rem;
+    align-items: flex-start !important;
+    padding: 2rem 0;
+    flex-wrap: wrap;
+}
+
+footer>ul>li {
+    gap: 1.4rem;
+    min-width: 150px;
+    align-items: start !important;
+    padding: 0 1.5rem;
+}
+
+footer>ul>li>ul {
+    align-items: flex-start !important;
+}
+
+footer>ul>li>* {
+    gap: .7rem;
 }

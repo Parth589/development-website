@@ -31,7 +31,7 @@
 
 }
 
-@media screen and (max-width:882px) {
+@media screen and (max-width:1000px) {
 
     /* *section4 */
     .s4--section1 {
@@ -167,3 +167,26 @@
         font-size: 5.5rem;
     }
 } */
+
+@media screen and (max-width:938px) {
+    .section10 {
+        grid-template-areas:
+            'head head'
+            'b1 b2'
+            'b3 b4'
+            'b5 b6';
+    }
+}
+
+@media screen and (max-width:650px) {
+    .section10 {
+        grid-template-areas:
+            'head'
+            'b1'
+            'b2'
+            'b3'
+            'b4'
+            'b5 '
+            'b6';
+    }
+}

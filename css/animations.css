@@ -126,3 +126,15 @@
 
     }
 }
+
+@keyframes grow-height {
+    from {
+        height: 0;
+        opacity: 0;
+    }
+
+    to {
+        height: 100px;
+        opacity: 1;
+    }
+}

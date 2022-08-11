@@ -168,3 +168,11 @@ img {
 .txt-right {
     text-align: right !important;
 }
+
+.filter {
+    filter: invert();
+}
+
+.pointer {
+    cursor: pointer;
+}
