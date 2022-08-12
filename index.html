@@ -17,22 +17,23 @@
 
 <body>
     <header>
-        <nav>
+        <nav class="primary-header">
             <!-- logo -->
             <img src="assets/icons/logo.png" alt="" class="icon-lg">
-            <ul class="caps text-sm" id="hamburger-menu-list">
-                <li><a href="">overview</a> </li>
-                <li><a href="">technology stack</a></li>
-                <li><a href="">desktop dev</a></li>
-                <li><a href="">mobile dev</a></li>
-                <li><a href="">cases</a></li>
+            <ul aria-expanded="false" class="caps text-sm primary-navigation" id="hamburger-menu-list">
+                <li><a href="#overview">overview</a> </li>
+                <li><a href="#tech-stack">technology stack</a></li>
+                <li><a href="#desktop-dev">desktop dev</a></li>
+                <li><a href="#mobile-dev">mobile dev</a></li>
+                <li><a href="#cases">cases</a></li>
             </ul>
             <!-- hamburger-trigger -->
-            <img src="assets/icons/list(1).svg" alt="" class="icon-md" id="hamburger-menu-trigger">
+            <img aria-controls="hamburger-menu-list" src="assets/icons/list(1).svg" alt="" class="icon-md"
+                id="hamburger-menu-trigger">
         </nav>
     </header>
     <main>
-        <section class="section1">
+        <section class="section1" id="overview">
             <div class="text-content">
                 <h2 class="text-x-lg bold">Development</h2>
                 <span class="text-lg">Making your product come alive</span>
@@ -72,7 +73,7 @@
                 </span>
             </div>
         </section>
-        <section class="section4">
+        <section class="section4" id="tech-stack">
             <section class="s4--section1">
                 <img src="assets/teck-stack.svg" alt="">
             </section>
@@ -86,7 +87,7 @@
                     </span>
                 </div>
 
-                <a href="" class="hover-inv text-md">Read more</a>
+                <a class="hover-inv text-md">Read more</a>
             </section>
         </section>
         <section class="section5">
@@ -103,7 +104,7 @@
             </div>
             <img src="assets/backend.svg" alt="">
         </section>
-        <section class="section6">
+        <section class="section6" id="desktop-dev">
             <div class="text-content">
 
                 <h3 class="text-lg-2 caps bold">Desktop dev</h3>
@@ -115,7 +116,7 @@
             </div>
             <img src="assets/mackbook-mockup.png" alt="">
         </section>
-        <section class="section7">
+        <section class="section7" id="mobile-dev">
             <div class="flex-column">
 
                 <h3 class="text-lg-2 caps bold">Mobile dev</h3>
@@ -138,7 +139,7 @@
                 <!--mobile mockup-->
             </div>
         </section>
-        <section class="section8 flex-column">
+        <section class="section8 flex-column" id="cases">
             <h3 class="text-lg-2 caps bold">full project support</h3>
             <img src="assets/project-support.jpeg" alt="">
             <div class="flex-row description">
@@ -195,7 +196,7 @@
             <div style="grid-area: b3;">
                 <img class="icon-lg-2" src="assets/icons/communication.svg" alt="">
                 <div>
-                    <h4 class="text-md-2">Colse communication</h4>
+                    <h4 class="text-md-2">Close communication</h4>
                     <span class="secondary-text text-md txt-left">
                         We have found that keeping in touch with our clients accounts for 60% of a given project’s
                         success.
@@ -304,47 +305,47 @@
                 <li class="flex-column">
                     <h4 class="text-md bold">Design</h4>
                     <ul class="text-md secondary-text flex-column">
-                        <li><a href="">Advantages</a></li>
-                        <li><a href="">Cases</a></li>
+                        <li><a>Advantages</a></li>
+                        <li><a>Cases</a></li>
                     </ul>
                 </li>
                 <li class="flex-column">
                     <h4 class="text-md bold">Branding</h4>
                     <ul class="text-md secondary-text flex-column">
-                        <li><a href="">Elements of branding</a></li>
-                        <li><a href="">Advantages</a></li>
-                        <li><a href="">Cases</a></li>
+                        <li><a>Elements of branding</a></li>
+                        <li><a>Advantages</a></li>
+                        <li><a>Cases</a></li>
                     </ul>
                 </li>
                 <li class="flex-column">
                     <h4 class="text-md bold">Development</h4>
                     <ul class="text-md secondary-text flex-column">
-                        <li><a href="">Technology Stack</a></li>
-                        <li><a href="">Desktop Dev</a></li>
-                        <li><a href="">Mobile Dev</a></li>
-                        <li><a href="">Cases</a></li>
+                        <li><a href="#tech-stack">Technology Stack</a></li>
+                        <li><a href="#desktop-dev">Desktop Dev</a></li>
+                        <li><a href="#mobile-dev">Mobile Dev</a></li>
+                        <li><a href="#cases">Cases</a></li>
                     </ul>
                 </li>
                 <li class="flex-column">
                     <h4 class="text-md bold">About</h4>
                     <ul class="text-md secondary-text flex-column">
-                        <li><a href="">Mission</a></li>
-                        <li><a href="">Our Values</a></li>
-                        <li><a href="">Our Clients</a></li>
-                        <li><a href="">Our Team</a></li>
-                        <li><a href="">Carrers</a></li>
-                        <li><a href="">Partnership</a></li>
+                        <li><a>Mission</a></li>
+                        <li><a>Our Values</a></li>
+                        <li><a>Our Clients</a></li>
+                        <li><a>Our Team</a></li>
+                        <li><a>Carrers</a></li>
+                        <li><a>Partnership</a></li>
                     </ul>
                 </li>
                 <li class="flex-column">
                     <h4 class="text-md bold">Social Networks</h4>
                     <ul class="text-md secondary-text flex-column">
-                        <li><a href="">Dribble</a></li>
-                        <li><a href="">Behance</a></li>
-                        <li><a href="">Instagram</a></li>
-                        <li><a href="">Medium</a></li>
-                        <li><a href="">Twitter</a></li>
-                        <li><a href="">Linkedin</a></li>
+                        <li><a>Dribble</a></li>
+                        <li><a>Behance</a></li>
+                        <li><a>Instagram</a></li>
+                        <li><a>Medium</a></li>
+                        <li><a>Twitter</a></li>
+                        <li><a>Linkedin</a></li>
                     </ul>
                 </li>
             </ul>

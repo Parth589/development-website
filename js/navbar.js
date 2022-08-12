@@ -1,55 +1,21 @@
-const navigation_height_mobile = "100vh";
-const navigation_height_desktop = "fit-content";
-let IS_OPENED = false;// !dont temper it. it is used as state of navigation 
-let trigger = document.getElementById("hamburger-menu-trigger");
-if (trigger === null) {
-    console.error("Cant find the tigger ");
+const toggleBtn = document.getElementById('hamburger-menu-trigger');
+const menu = document.querySelector('.primary-navigation');
+
+if (menu.getAttribute('aria-expanded') === 'true') {
+    toggleBtn.src = 'assets/icons/list(1).svg';
 }
 else {
-    trigger.addEventListener("click", () => {
+    toggleBtn.src = 'assets/icons/x-lg(1).svg';
 
-        if (IS_OPENED) {
-            IS_OPENED = false;
-            //close the navigation
-            if (window.innerWidth <= 700) {
-                trigger.src = "assets/icons/list(1).svg";
-                // document.getElementById("navigation-list").style.opacity = "0";
-                // document.getElementById("navigation-list").style.height = "0";
-                document.getElementById("hamburger-menu-list").style.animation = "up 1s 1";
-            }
-        }
-        else {
-            IS_OPENED = true;
-            //open the navigation
-            if (window.innerWidth <= 700) {
-                trigger.src = "assets/icons/x-lg(1).svg";
-                // document.getElementById("navigation-list").style.height = navigation_height_mobile;
-                // document.getElementById("navigation-list").style.opacity = "1";
-                document.getElementById("hamburger-menu-list").style.animation = "down 1s 1 forwards";
-            }
-        }
-    });
 }
-let previous_width = window.innerWidth;
-window.addEventListener("resize", () => {
-    let width = window.innerWidth;
-    if (width <= 700) {
-        //close 
-        IS_OPENED = false;
-        document.getElementById("hamburger-menu-list").style.opacity = "0";
-        document.getElementById("hamburger-menu-list").style.height = "0";
-
+toggleBtn.addEventListener('click', () => {
+    if (menu.getAttribute('aria-expanded') === 'true') {
+        menu.setAttribute('aria-expanded', false);
+        toggleBtn.src = 'assets/icons/x-lg(1).svg';
     }
     else {
-        if (previous_width <= 700) {
+        menu.setAttribute('aria-expanded', true);
+        toggleBtn.src = 'assets/icons/list(1).svg';
 
-            //switching from mobile to desktop
-            IS_OPENED = false;
-            document.getElementById("hamburger-menu-list").style.animation = "up .5s 1";
-            trigger.src = "assets/icons/list(1).svg";
-        }
-        document.getElementById("hamburger-menu-list").style.height = navigation_height_desktop;
-        document.getElementById("hamburger-menu-list").style.opacity = "1";
     }
-    previous_width = width;
 });

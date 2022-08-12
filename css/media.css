@@ -2,18 +2,26 @@
     --navigation-height: 100vh;
 }
 
-@media screen and (max-width:700px) {
-    nav {
-        justify-content: space-between;
-    }
 
+@media screen and (min-width:850px) {
     #hamburger-menu-trigger {
-        display: unset;
-        cursor: pointer;
+        display: none;
     }
 
     #hamburger-menu-list {
-        position: absolute;
+        position: unset;
+        height: unset;
+        width: 70%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        transform: none;
+        flex-direction: row;
+        background-color: transparent;
+        /* padding-inline: 2rem; */
+        font-size: unset !important;
+        /* gap: 2rem; */
+        /* position: absolute;
         height: 0;
         opacity: 0;
         background-color: var(--clr-nav-background-solid);
@@ -25,9 +33,21 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        top: 100%;
+        top: 100%; */
     }
 
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        width: 100%;
+        height: 100%;
+    }
+
+    .primary-header {
+        justify-content: center;
+    }
 
 }
 

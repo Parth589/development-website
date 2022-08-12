@@ -12,6 +12,12 @@
     font-family: Roboto, sans-serif;
     min-width: none;
     max-width: none;
+    scroll-behavior: smooth;
+    scroll-padding: 65px;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 img {
@@ -175,4 +181,25 @@ img {
 
 .pointer {
     cursor: pointer;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 100vmax;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: grey;
 }
