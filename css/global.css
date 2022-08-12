@@ -34,7 +34,7 @@ nav {
     transform: translateX(0);
 }
 
-.primary-navigation[aria-expanded="true"] {
+.primary-navigation[aria-expanded="false"] {
     transform: translateX(100%);
 }
 
@@ -499,7 +499,7 @@ header {
     justify-content: center;
     align-items: start;
     flex-direction: column;
-    background-image: url('/assets/brand.jpg');
+    background-image: url('https://uploads-ssl.webflow.com/609124aa26f8d4863c88a6d9/6120a29f9e7c25c3def7afbc_dev-display3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     /* height: 500px; */
