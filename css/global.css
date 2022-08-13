@@ -68,7 +68,7 @@ header {
 }
 
 .section1 {
-    background-image: url('https://uploads-ssl.webflow.com/609124aa26f8d4863c88a6d9/610cf1b4f81a41337a0c59d4_dev_2.png');
+    background-image: url('../assets/desktop.png');
     width: 100%;
     height: 180vh;
     background-position: center;
@@ -499,7 +499,7 @@ header {
     justify-content: center;
     align-items: start;
     flex-direction: column;
-    background-image: url('https://uploads-ssl.webflow.com/609124aa26f8d4863c88a6d9/6120a29f9e7c25c3def7afbc_dev-display3.jpg');
+    background-image: url('../assets/brand.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     /* height: 500px; */
