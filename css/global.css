@@ -31,11 +31,11 @@ nav {
     background-color: var(--clr-nav-background-solid);
     transition: transform 700ms;
     transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
-    transform: translateX(0);
+    transform: translateX(100%);
 }
 
-.primary-navigation[aria-expanded="false"] {
-    transform: translateX(100%);
+.primary-navigation[aria-expanded="true"] {
+    transform: translateX(0);
 }
 
 @supports (backdrop-filter: blur(1rem)) {
@@ -285,7 +285,7 @@ header {
 .section4 {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     min-height: 100vh;
     background-color: #000;
     color: white;

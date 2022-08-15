@@ -62,6 +62,9 @@
 /* text-size changes according to screen size */
 /* mobile design */
 @media screen and (max-width:480px) {
+    .section8 .description {
+        flex-direction: column;
+    }
 
     .text-sm {
         font-size: .8rem;
@@ -208,5 +211,14 @@
             'b4'
             'b5 '
             'b6';
+    }
+}
+
+@media screen and (min-width:700px) {
+    .section8>img {
+        height: 50vh;
+        width: auto;
+        max-width: 90vw;
+        object-fit: contain;
     }
 }
