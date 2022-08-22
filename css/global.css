@@ -424,7 +424,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    padding: 2rem 0;
 }
 
 .section6 .text-content {
@@ -450,6 +450,7 @@ header {
     background-color: #fff;
     color: #000;
     gap: 3rem;
+    padding: 2rem 0;
 }
 
 
@@ -486,12 +487,10 @@ header {
     align-items: flex-start;
 }
 
-/* .section8 .description> * {
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    flex-direction: column;
-} */
+.section8 .description>*>* {
+    margin: 1rem 0;
+}
+
 
 .section9 {
     height: max(50vh, 600px);

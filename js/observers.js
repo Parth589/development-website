@@ -6,6 +6,7 @@ const callback = (entries, observer) => {
             //in the viewport
             section_animation.setAttribute('animate', "");
             document.querySelector(".develop-animation>span").style.animation = 'fade-up-btm 1s .5s 1 forwards';
+            observer.unobserve(section);
         }
         else {
             //outside the viewport
@@ -35,13 +36,14 @@ let observer2 = new IntersectionObserver((entries) => {
             Array.from(switch_section.children).forEach((e) => {
                 e.toggleAttribute('second');
             });
+            observer2.unobserve(switch_section);
         }
         else {
             //going outside
             switch_section.removeAttribute('animate');
-            Array.from(switch_section.children).forEach((e) => {
-                e.toggleAttribute('second');
-            });
+            // Array.from(switch_section.children).forEach((e) => {
+            //     e.toggleAttribute('second');
+            // });
         }
     });
 }, {
