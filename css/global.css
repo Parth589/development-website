@@ -338,44 +338,53 @@ header {
     border-radius: 15px;
     aspect-ratio: 19/6;
     /* color: #000; */
+    /* overflow-y: hidden; */
 }
 
 .s4--section2 * {
     width: auto;
 }
 
-/* 
-
-.section4>section:first-child {
-    display: flex;
-    justify-content: center;
-    min-width: 30vw;
-    max-width: 80vw;
-}
-
-
-.section4>section:last-child {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 2rem;
-    width: 450px;
-    height: 687px;
-    border-radius: 27px;
-    padding: 1rem;
-    background-color: rgb(75, 75, 75);
-
-}
-
-*/
-.section4>section:last-child>a {
+.s4--section2 a {
     border-radius: 100vmax;
     outline: 2px solid white;
     padding: 1rem 1.2rem;
     /* box-sizing: content-box; */
+    cursor: pointer;
 }
 
+.s4--section2 #modal {
+    position: absolute;
+    /* top: auto; */
+    margin-inline: auto;
+    width: 800px;
+    max-width: 90vw;
+    height: fit-content;
+    padding: 2rem;
+    background-color: #000;
+    border: 2px solid grey;
+    border-radius: 16px;
+    z-index: 2;
+}
+
+#modal-close-btn {
+    cursor: pointer;
+}
+
+.s4--section2 #modal .modal-content {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.s4--section2 #modal .modal-content>li {
+    background-color: grey;
+    color: #fff;
+    border-radius: 100vmax;
+    padding: 1rem 2rem;
+}
 
 .section5 {
     min-height: 100vh;
